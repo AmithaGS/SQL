@@ -1,0 +1,16 @@
+USE AMITHA;
+CREATE TABLE product(p_name varchar(20),p_id int,p_price bigint);
+SELECT * FROM product;
+ALTER TABLE product ADD COLUMN p_brand varchar(20);
+ALTER TABLE product ADD COLUMN manufacture_date int;
+ALTER TABLE product ADD COLUMN expire_date int;
+ALTER TABLE product ADD COLUMN p_description varchar(20);
+SELECT * FROM product;
+ALTER TABLE product ADD COLUMN p_quantity int;
+SELECT * FROM product;
+SELECT * FROM EMPLOYEE;
+SELECT * FROM HOME;
+SELECT * FROM HOSPITAL;
+SELECT * FROM HOTEL;
+SELECT * FROM STUDENT;
+DESC product;
