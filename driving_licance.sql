@@ -53,7 +53,6 @@ insert into LLR_TEST_INFO values(57,'shalini',2007,'2023-02-18',1003,'shimogga',
 insert into LLR_TEST_INFO values(58,'ankitha',2008,'2024-03-17',1006,'andrapradesh',289,'good',true,'2026-09-16');
 insert into LLR_TEST_INFO values(59,'akhila',2009,'2000-05-15',1019,'channasandra',124,'average',false,'2006-05-29');
 insert into LLR_TEST_INFO values(60,'harshitha',2010,'2003-04-19',1011,'kr market',189,'good',true,'2009-03-28');
-
 insert into LLR_TEST_INFO values(61,'lavanya',2011,'2024-09-18',1009,'hampinagara',210,'good',true,'2025-09-18');
 insert into LLR_TEST_INFO values(62,'sridevi',2012,'2023-10-09',1013,'bihar',111,'better',false,'2028-11-07');
 insert into LLR_TEST_INFO values(63,'anu',2013,'2024-11-03',1010,'shiridi',128,'good',true,'2009-09-16');
@@ -75,7 +74,6 @@ insert into DRIVING_LICENCE_INFO values(27,'soumya',107,2014,1005,'2001-11-28','
 insert into DRIVING_LICENCE_INFO values(28,'sangeeta',108,2019,1009,'2002-10-27','malleshwaram','2006-03-03','2025-04-25','2 wheeler');
 insert into DRIVING_LICENCE_INFO values(29,'darshan',109,2001,1008,'2003-09-26','bashyam circle','2008-01-04','2028-04-17','3 wheeler');
 insert into DRIVING_LICENCE_INFO values(30,'sunil',110,2004,1010,'2004-08-25','mysore road','2007-12-21','2040-04-05','4 wheeler');
-
 insert into DRIVING_LICENCE_INFO values(31,'suhas',111,2019,1012,'2003-12-08','nagasandra','2012-09-15','2020-04-12','bike');
 insert into DRIVING_LICENCE_INFO values(32,'vaasu',112,2017,1017,'2020-10-07','dasarahalli','2010-04-11','2013-04-23','4 wheeler');
 insert into DRIVING_LICENCE_INFO values(33,'bhavana',113,2015,1013,'2018-9-11','jalahalli','2020-11-09','2025-04-25','2 wheeler');
@@ -97,7 +95,6 @@ insert into DRIVING_LICENCE_TEST_INFO values(87,707,106,'rachhu','1954-11-03','n
 insert into DRIVING_LICENCE_TEST_INFO values(88,708,108,'shiv','1983-12-13','meggan',114,'MOT',true,'2000-08-09');
 insert into DRIVING_LICENCE_TEST_INFO values(89,709,109,'natasa','1787-09-21','sanjay gandhi',157,'CVE',false,'2001-4-23');
 insert into DRIVING_LICENCE_TEST_INFO values(90,710,110,'hardhik','1984-03-25','trinity',237,'CLR',true,'2006-2-26');
-
 insert into DRIVING_LICENCE_TEST_INFO values(91,711,111,'raghu','2016-08-26','mg road',200,'CLR',true,'2027-12-19');
 insert into DRIVING_LICENCE_TEST_INFO values(92,712,112,'pallavi','2017-11-14','trinity',118,'MOT',false,'2009-09-6');
 insert into DRIVING_LICENCE_TEST_INFO values(93,713,112,'upendra','2019-12-18','hoodi',190,'MOT',true,'2000-08-09');
@@ -142,5 +139,6 @@ on duplicate key update examinar_name='viji';
 
 //replace
 
-replace into LLR_INFO(id,llr_id,full_name,dob,phone_num,email,llr_applied_date,llr_approved,llr_expired_date)
-values(20,1020,sharmila,'2053-09-23',9034783219,'ranga87@gmail.com','2032-9-04','2023-09-23','2018-05-29');
+replace into LLR_INFO(llr_id,full_name)values(1005,'jeevitha');
+replace into LLR_TEST_INFO(test_id,test_location)values(2001,mandya);
+replace into LLR_TEST_INFO(id,remarks)values(2020,'average');
