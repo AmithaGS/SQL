@@ -127,7 +127,7 @@ insert into DRIVING_LICENCE_INFO(dl_id,id,full_name) values(101,21,'mithili') on
 insert into DRIVING_LICENCE_INFO(dl_id,id,dob) values(104,24,'1024-06-29') on duplicate key update permanent_location='ragigudda';
 insert into DRIVING_LICENCE_TEST_INFO(id,driving_test_id,score) values(81,701,200) on duplicate key update score=220;
 insert into DRIVING_LICENCE_TEST_INFO(id,driving_test_id,examinar_name) values(82,702,'yash') on duplicate key update examinar_name='prajju';
-
+driving_licence_info
 // insert data
 insert into LLR_INFO(id,llr_id,address) values(21,1021,'ragigudda') on duplicate key update address='ragigudda';
 insert into LLR_INFO(id,llr_id,full_name,dob,address,phone_num,email,llr_applied_date,llr_approved,llr_expired_date) 
@@ -138,6 +138,8 @@ is_testAccepted,reattempted_date) values(71,'viji',2021,'2001-01-19',1004,'navar
 on duplicate key update examinar_name='viji';
 
 //replace
+select * from DRIVING_LICENCE_INFO;
+desc DRIVING_LICENCE_INFO;
 
 replace into LLR_INFO(llr_id,full_name)values(1005,'jeevitha');
 replace into LLR_TEST_INFO(test_id,test_location)values(2001,mandya);
